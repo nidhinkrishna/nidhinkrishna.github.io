@@ -15,6 +15,9 @@
     <link rel="shortcut icon" href="./images/profile.jpg" type="image/x-icon" />
     <!-- css linking -->
     <link rel="stylesheet" href="style.css" />
+     <!-- ajax linking -->
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <!-- heading section -->
@@ -228,11 +231,12 @@
     <section class="contact" id="contact">
       <div class="contact-content">
         <h3>Contact</h3>
-        <form action="" id="contact-form">
-          <input type="text" name="" id="" required placeholder="Your Name">
-          <input type="email" name="" id="" required placeholder="Your Email">
-          <textarea name="" id="" cols="30" rows="10" required placeholder="Your Message"></textarea>
+        <form action="" method="post" id="contact-form">
+          <input type="text" name="Name" id="Name" required placeholder="Your Name">
+          <input type="email" name="Email" id="Email" required placeholder="Your Email">
+          <textarea name="Message" id="Message" cols="30" rows="10"  required placeholder="Your Message"></textarea>
           <button>Send Message</button>
+          
         </form>
       
         
@@ -274,5 +278,7 @@
       src="https://kit.fontawesome.com/761751b420.js"
       crossorigin="anonymous"
     ></script>
+
+   
   </body>
 </html>

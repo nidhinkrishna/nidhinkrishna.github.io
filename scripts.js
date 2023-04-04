@@ -41,10 +41,33 @@ window.onscroll = () => {
 ScrollReveal({ 
     reset: true,
     distance: '30px',
-    duration: 2000,
+    duration: 1000,
     delay: 100
  });
  ScrollReveal().reveal('.home-content,.heading,.contact h3,.projects h3,.skills h3,.about h3', {origin:'top'});
  ScrollReveal().reveal('.home-image,.about,.contact form,.projects,.skills', {origin:'bottom'});
  ScrollReveal().reveal('.home-content h1', {origin:'left'});
+
+
+//  form data submission using ajax
+
+
+$("#contact-form").submit((e)=>{
+    e.preventDefault()
+    $.ajax({
+        url:"https://script.google.com/macros/s/AKfycbygLceP2Q--hK3KhF_xSpWi_eFQPLw_Zw0rP-uQ3dGkhTUQFnAeVyMPWAzJDMTYIVQ4ZA/exec",
+        data:$("#contact-form").serialize(),
+        method:"post",
+        success:function (response){
+            alert("Form submitted successfully")
+            window.location.reload()
+           
+        },
+        error:function (err){
+            alert("Something Error")
+
+        }
+    })
+})
+
 
