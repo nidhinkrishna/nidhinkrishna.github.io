@@ -45,7 +45,7 @@ ScrollReveal({
     delay: 100
  });
  ScrollReveal().reveal('.home-content,.heading,.contact h3,.projects h3,.skills h3,.about h3', {origin:'top'});
- ScrollReveal().reveal('.home-image,.about,.contact form,.projects,.skills', {origin:'bottom'});
+ ScrollReveal().reveal('.home-image', {origin:'bottom'});
  ScrollReveal().reveal('.home-content h1', {origin:'left'});
 
 
@@ -61,6 +61,7 @@ $("#contact-form").submit((e)=>{
         success:function (response){
             alert("Form submitted successfully")
             window.location.reload()
+            FormData.clear()
            
         },
         error:function (err){
