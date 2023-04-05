@@ -422,20 +422,29 @@ nav a.active {
   cursor: pointer;
   font-weight: 400;
 }
+.my-details{
+  margin: 1.5rem 0;
+}
+.my-details p{
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.5;
+
+}
 
 .footer-text {
   background: var(--second-bg-color);
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 10px;
+  justify-content: space-between;
+  padding: 5px;
   font-size: 2rem;
   flex-wrap: wrap;
   margin-top: 1rem;
 }
 .footer-text p,
 .top-icon {
-  margin: 1rem 2.5rem;
+  margin: 0rem 2.5rem;
   font-weight: 300;
 }
 .top-icon {
@@ -473,8 +482,10 @@ nav a.active {
   }
   section {
     padding: 10rem 3% 2rem;
-    min-height: 50vh;
+    /* min-height: 80vh; */
   }
+  
+
   .education {
     height: 200px;
   }
@@ -537,9 +548,7 @@ nav a.active {
     left: 46%;
     max-height: 180px;
   }
-  #contact{
-    min-height: 60vh;
-  }
+ 
 }
 @media (max-width: 450px) {
   html {
