@@ -537,6 +537,9 @@ nav a.active {
     left: 46%;
     max-height: 180px;
   }
+  #contact{
+    min-height: 60vh;
+  }
 }
 @media (max-width: 450px) {
   html {
