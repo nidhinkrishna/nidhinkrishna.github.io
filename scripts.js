@@ -44,10 +44,11 @@ ScrollReveal({
     duration: 1000,
     delay: 100
  });
- ScrollReveal().reveal('.home-content,.heading,.skills h3,.about h3', {origin:'top'});
+ ScrollReveal().reveal('.home-content,.heading', {origin:'top'});
  ScrollReveal().reveal('.home-image', {origin:'bottom'});
- ScrollReveal().reveal('.home-content h1,.contact form,.projects h3', {origin:'left'});
- ScrollReveal().reveal('.skills h3', {origin:'right'});
+
+ ScrollReveal().reveal('.home-content h1,.about h3,.projects h3',{origin:'left'});
+ ScrollReveal().reveal('.skills h3,.contact h3', {origin:'right'});
 
 
 //  form data submission using ajax
