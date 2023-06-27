@@ -318,6 +318,11 @@ nav a.active {
   transition: 0.5s;
   background: var(--second-bg-color);
 }
+.projects-list li{
+  font-size: 2rem;
+  line-height: 1.5;
+  text-align: justify;
+}
 .projects-list:hover {
   box-shadow: 0 0 1rem var(--main-color);
 }
