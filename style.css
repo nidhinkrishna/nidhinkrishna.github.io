@@ -322,6 +322,7 @@ nav a.active {
   font-size: 2rem;
   line-height: 1.5;
   text-align: justify;
+  font-weight: 300;
 }
 .projects-list:hover {
   box-shadow: 0 0 1rem var(--main-color);
